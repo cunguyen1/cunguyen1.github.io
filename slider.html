@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page-slider-js</title>
+  <script src="slider.js"></script>
+  <script src="timeline.js"></script>
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="timeline.css">
+
+  <style>
+    #welcome {
+      /* background: linear-gradient(225deg, #ffc27d, #ff8e93); */
+      background-image: url(https://cdn-media-1.freecodecamp.org/images/1*ul3RsMeBo2H_PS2oduGGig.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.1);
+      background-blend-mode: lighten;
+    }
+
+    .profile-image {
+      padding-top: 9%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .name {
+      font-size: 8vw;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      text-shadow: 1px 1px 1px #51D2B7;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slides">
+    <section id="welcome">
+      <div class="profile-image">
+        <img style="border-radius: 100%;border: 3px solid #51D2B7;" src="avt2.jpg" height="250px" />
+      </div>
+      <div>
+        <p class="name">Cuong Nguyen</p>
+      </div>
+    </section>
+    <section id="timeline">
+      <div class="wrapper">
+        <div class="center-line">
+          <a href="#" class="scroll-icon"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="row row-1">
+          <section>
+            <i class="icon fas fa-home"></i>
+            <div class="details">
+              <span class="title">Title of Section 1</span>
+              <span>1st Jan 2021</span>
+            </div>
+            <p>Lorem</p>
+          </section>
+        </div>
+
+        <div class="row row-2">
+          <section>
+            <i class="icon fas fa-home"></i>
+            <div class="details">
+              <span class="title">Title of Section 1</span>
+              <span>1st Jan 2021</span>
+            </div>
+            <p>Lorem</p>
+          </section>
+        </div>
+    </section>
+  </div>
+
+  <script>
+    var mySlider = slider('.slides');
+  </script>
+</body>
+
+</html>
